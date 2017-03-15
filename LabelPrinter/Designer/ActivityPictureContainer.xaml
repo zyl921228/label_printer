@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="LabelPrinter.Designer.ActivityPictureContainer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:pic="clr-namespace:LabelPrinter.ActivityPicture"
+             xmlns:mcl="clr-namespace:LabelPrinter.Component">
+    <Grid Name="gridContainer"     Width="auto" Height="auto"  HorizontalAlignment="Center" VerticalAlignment="Center">
+        <pic:InteractoinAcitivity x:Name="picINTERACTION"></pic:InteractoinAcitivity>
+        <TextBlock   x:Name="txtActivityName" Foreground="Black" Text="新建活动" FontSize="24"    
+                     VerticalAlignment="Center" FontFamily="SimSun" HorizontalAlignment="Center" TextWrapping="Wrap">
+
+        </TextBlock>
+        <mcl:VerticalTextBlock  x:Name="txtActivityNameV" Text="新建活动" VerticalAlignment="Bottom" FontFamily="SimSun" Visibility="Collapsed" HorizontalAlignment="Left"  FontSize="24"></mcl:VerticalTextBlock>
+    </Grid>
+</UserControl>

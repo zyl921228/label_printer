@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="LabelPrinter.Control.ActivitySetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+               MouseLeftButtonDown="UserControl_MouseLeftButtonDown" 
+             MouseLeftButtonUp="UserControl_MouseLeftButtonUp" 
+             MouseMove="UserControl_MouseMove" >
+    <Canvas x:Name="LayoutRoot"  >
+        <Canvas.Resources>
+            <Storyboard x:Key="sbActivitySettingDisplay"  x:Name="sbActivitySettingDisplay">
+                <DoubleAnimation   From="0" To="1.0" Duration="00:00:0.5" 
+                    Storyboard.TargetName="LayoutRoot" 
+                    Storyboard.TargetProperty="Opacity" >
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Key="sbActivitySettingClose" x:Name="sbActivitySettingClose">
+                <DoubleAnimation   From="1.0" To="0.0" Duration="00:00:0.5" 
+                    Storyboard.TargetName="LayoutRoot" 
+                    Storyboard.TargetProperty="Opacity" >
+                </DoubleAnimation>
+            </Storyboard>
+        </Canvas.Resources>
+        <Border   Background="Gold" CornerRadius="10"  BorderBrush="SlateGray"  BorderThickness="2"  >
+            <StackPanel VerticalAlignment="Top" Margin="20"  >
+                <Grid ShowGridLines="False" Name="gridContainer">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"  ></RowDefinition>
+                        <RowDefinition Height="30"  ></RowDefinition>
+                        <RowDefinition Height="30"   ></RowDefinition>
+                        <RowDefinition Height="30"   ></RowDefinition>
+                        <RowDefinition Height="30"   ></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="60" ></ColumnDefinition>
+                        <ColumnDefinition  Width="200"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="tbActivityName" Text="Text" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0"></TextBlock>
+                    <TextBlock Name="tbActivityType" Text="Orientation" VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="0" Grid.Row="1"></TextBlock>
+                    <TextBox   Name="txtActivityName" Width="200"  VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="0"></TextBox>
+                    <ComboBox SelectionChanged="ComboBox_SelectionChanged" Name="cbActivityType" Width="200"  VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" >
+                                    <TextBlock Text="{Binding Path=Name}"  Visibility="Collapsed" />
+                                    <TextBlock Text="{Binding Path=Text}" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBlock Name="tbFontSize" Text="Font-Size" VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="0" Grid.Row="4"></TextBlock>
+                    <ComboBox SelectionChanged="ComboBox_SelectionChanged" Name="cbFontSize" Width="200"  VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="4">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" >
+                                    <TextBlock Text="{Binding Path=Name}" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBlock Name="tbMergePictureRepeatDirection" Text="Orientation" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2"></TextBlock>
+
+                    <ComboBox Name="cbMergePictureRepeatDirection" Width="200"  VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="2">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" >
+                                    <TextBlock Text="{Binding Path=Name}"  Visibility="Collapsed" />
+                                    <TextBlock Text="{Binding Path=Text}" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Grid Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  Width="60" ></ColumnDefinition>
+                            <ColumnDefinition  Width="50"></ColumnDefinition>
+                            <ColumnDefinition  Width="40" ></ColumnDefinition>
+                            <ColumnDefinition  Width="60" ></ColumnDefinition>
+                            <ColumnDefinition  Width="50"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Name="tbPositionX" Text="Position-X" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0"/>
+                        <TextBox   Name="txtPositionX" Width="50"  VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="1" ></TextBox>
+                        <TextBlock Name="tbPositionY" Text="Position-Y" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="3"></TextBlock>
+                        <TextBox   Name="txtPositionY" Width="50"  VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="4" ></TextBox>
+                    </Grid>
+                </Grid>
+                <StackPanel VerticalAlignment="Center"  HorizontalAlignment="Center"  Margin="0 10 0 0" Orientation="Horizontal"  >
+                    <Button Name="btnSave" Content="OK" Margin="0 0 0 0"  Width="60" Height="30" Click="btnSave_Click" ></Button>
+                    <Button Name="btnClose" Content="Cancel" Margin="10 0 0 0"   Width="60" Height="30" Click="btnClose_Click" ></Button>
+                    <Button Name="btnAppay" Content="Apply" Margin="10 0 0 0"  Width="60" Height="30" Click="btnApply_Click" ></Button> 
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+    </Canvas>
+</UserControl>

@@ -1,0 +1,227 @@
+﻿<UserControl x:Class="LabelPrinter.Designer.Container"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:setting="clr-namespace:LabelPrinter.Control" 
+    KeyDown="UserControl_KeyDown"
+    KeyUp="UserControl_KeyUp" 
+             
+             
+               
+   >
+    <Grid  x:Name="LayoutRoot"  Background="#A0A0A0" ShowGridLines="False" Margin="0" >
+
+        <Grid.RowDefinitions >
+            <RowDefinition Height="35"   />
+            <RowDefinition Height="640"/>
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas Grid.ColumnSpan="2"  Grid.Row="0"  Grid.Column="0" Width="1150"    HorizontalAlignment="Left" Background="#0054e3" >
+            <TextBlock    Margin="10 5 0 0" Height="35"   FontSize="16" Foreground="White" Text="Label Printer" ></TextBlock>
+            <!--<Button Visibility="Collapsed" x:Name="btnApplyEnglishCulture" Width="50" Content="English" Click="btnApplyEnglishCulture_Click"  Margin="1080 5 0 0"></Button>
+            <Button Visibility="Collapsed" x:Name="btnApplyChineseCulture" Width="50" Content="中文" Click="btnApplyChineseCulture_Click"  Margin="1020 5 0 0"></Button>-->
+
+        </Canvas>
+
+        <StackPanel VerticalAlignment="Top"  Background="#e5eff8"     Width="150" Height="640" Grid.Row="1" Grid.Column="0"  >
+
+            <TextBlock Text="Label Name：" x:Name="tbWorkFlowName" Padding="10"></TextBlock>
+            <TextBox   x:Name="txtWorkFlowName" Width="130"  HorizontalAlignment="Left" Margin="10 0 0 10"></TextBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="75" ></ColumnDefinition>
+                    <ColumnDefinition  Width="75"></ColumnDefinition>
+                    <ColumnDefinition  Width="10"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1">
+                    <Button Content="Name" x:Name="btnAddActivity1" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity_Click"  />
+                    <Button Content="Net weight" x:Name="btnAddActivity2" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity2_Click"  />
+                    <Button Content="Gross weight" x:Name="btnAddActivity3" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity3_Click"  />
+                    <Button Content="Quality" x:Name="btnAddActivity4" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity4_Click"  />
+                    <Button Content="Size" x:Name="btnAddActivity5" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity5_Click"  />
+                    <Button Content="Price" x:Name="btnAddActivity6" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity6_Click"  />
+                    <!--<Button Content="条码" x:Name="btnAddActivity7" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity7_Click"  />-->
+                    <Button Content="Cert. Num" x:Name="btnAddActivity8" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity8_Click"  />
+                    <Button Content="Purity" x:Name="btnAddActivity9" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity9_Click"  />
+                    <Button Content="Color" Name="btnAddActivity10" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity10_Click"  />
+                    <Button Content="Cut" Name="btnAddActivity11" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity11_Click"  />
+                    <Button Content="Bar code" x:Name="btnAddBarCode" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"     Click="AddBarCode_Click"  />
+                    <!--<Button Content="添加规则" x:Name="btnAddRule"  VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="80" Height="30"    Click="AddRule_Click" />
+            <Button Content="添加标签" x:Name="btnAddLabel"  VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="80" Height="30"    Click="AddLabel_Click" />-->
+
+                </StackPanel>
+                <StackPanel Grid.Column="0">
+                    <Border BorderBrush="#cccccc" BorderThickness="0 0 0 2" Padding="0 0 0 10" Margin="0 0 0 20" CornerRadius="0"  >
+                        <StackPanel>
+                        <Button Content="Output" x:Name="btnExportToXml"  VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"  Click="btnExportXml_Click" >
+                                <Button.Background>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FF16BFFF" Offset="0.507"/>
+                                        <GradientStop Color="#FFEBEBEB"/>
+                                        <GradientStop Color="#FF168AFF" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Button.Background>
+                            </Button>
+                            <Button Content="Import" x:Name="btnImportFromXml"  VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"  Click="btnShowXmlContainer_Click" />
+                        <Button Content="Delete"    x:Name="btnSave"  VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"  Click="btnDelete_Click" />
+                        <Button Content="Clean all" x:Name="btnClearContainer" VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"  Click="ClearContainer" />
+                        <Button Content="undo" x:Name="btnPrevious"  VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"  Click="btnPre_Click" />
+                        <Button Content="redo" x:Name="btnNext" VerticalAlignment="Top"  Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="30"  Click="btnNext_Click" />
+                        </StackPanel>
+                    </Border>
+                    <Button Content="Labor cost" Name="btnAddActivity12" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity12_Click"  />
+                    <Button Content="Ori. code" Name="btnAddActivity13" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity13_Click"  />
+                    <Button Content="Fixed price" Name="btnAddActivity14" VerticalAlignment="Top" Margin="5 5 10 5" HorizontalAlignment="Right" Width="60" Height="24"     Click="AddActivity14_Click"  />
+                </StackPanel>
+            </Grid>
+            <StackPanel   Orientation="Horizontal" Height="20"  Margin="10 5 0 0">
+                <TextBlock x:Name="tbShowGridLines" Visibility="collapsed" Text="显示网格"></TextBlock>
+                <CheckBox x:Name="cbShowGridLines"  Visibility="collapsed"  IsChecked="false"  Click="cbShowGridLines_Click"></CheckBox>
+            </StackPanel>
+            <Canvas Height="200">
+                <StackPanel>
+
+                    <!--<StackPanel Orientation="Horizontal"  Margin="10 5 0 0">
+                <TextBlock Name="tbZoom" Text="缩放"  Margin="0 0 5 0"  Width="35" ></TextBlock>
+
+
+                <Slider Name="sliZoom"  LargeChange="1"  SmallChange="1"  Maximum="2" Minimum="0.5"  Width="70"   ValueChanged="sliZoom_ValueChanged"></Slider>
+                <TextBlock Name="btZoomValue" Text="1.2"   Margin="0 0 0 0" Width="30" ></TextBlock>
+
+            </StackPanel>-->
+                    <!--<HyperlinkButton HorizontalContentAlignment="Right" Margin="0 10 10 10"    VerticalAlignment="Top"     Foreground="Black" FontSize="12"      NavigateUri="http://www.dhu.edu.cn/" TargetName="_blank"  ClickMode="Release" Content="确定设置"     ></HyperlinkButton>-->
+                    <Label FontWeight="Bold" FontSize="14" Foreground="#FF838383">Print Setup</Label>
+                        <StackPanel Orientation="Horizontal" Margin="10 5 0 0">
+                        <TextBlock x:Name="tbContainerWidth" Text="Width" Margin="0 0 5 0" Width="35" />
+                        <TextBox x:Name="tbWidth" KeyDown="tbWidth_KeyDown_1" LostFocus="tbWidth_LostFocus_1"/>
+                        <TextBlock x:Name="tbContainerWidthmm" Text=" mm" Margin="0 0 5 0" Width="35" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  Margin="10 5 0 0">
+                        <TextBlock x:Name="tbContainerHeight" Text="Height"  Margin="0 0 5 0"  Width="35" />
+                        <TextBox x:Name="tbHeight" KeyDown="tbHeight_KeyDown_1" LostFocus="tbHeight_LostFocus_1" />
+                        <TextBlock x:Name="tbContainerHeightmm" Text=" mm"  Margin="0 0 5 0"  Width="35" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  Margin="10 5 0 0">
+                        <TextBlock x:Name="tbPrintSpeed" Text="Speed"  Margin="0 0 5 0"  Width="48" />
+                        <ComboBox x:Name="cbPrintSpeed" Width="56" SelectionChanged="cbPrintSpeed_SelectionChanged" DropDownClosed="cbPrintSpeed_DropDownClosed">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  Margin="10 5 0 0">
+                        <TextBlock x:Name="tbPrintLightness" Text="Brightness"  Margin="0 0 5 0"  Width="58" />
+                        <ComboBox x:Name="cbPrintLightness" Width="56" SelectionChanged="cbPrintLightness_SelectionChanged" DropDownClosed="cbPrintLightness_DropDownClosed">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  Margin="10 5 0 0">
+                        <TextBlock x:Name="tbPrintNums" Text="Copies"  Margin="0 0 5 0"  Width="48" />
+                        <TextBox x:Name="tbNums" KeyDown="tbHeight_KeyDown_1" Text="1" LostFocus="tbNums_LostFocus_1" />
+                    </StackPanel>
+
+                </StackPanel>
+            </Canvas>
+        </StackPanel>
+
+        <ScrollViewer x:Name="svContainer"  Background="#dcdcdc" HorizontalContentAlignment="Left" VerticalAlignment="Top" BorderBrush="Beige"  BorderThickness="0" HorizontalAlignment="Left"  Width="1000" Height="640"  Grid.Row="1" Grid.Column="1"   HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+
+            <ScrollViewer.Content>
+                <Border   VerticalAlignment="Top"   HorizontalAlignment="Left"    BorderThickness="1"  BorderBrush="White" >
+
+                    <Canvas       x:Name="cnsDesignerContainer"     VerticalAlignment="Top"   HorizontalAlignment="Left"  Width="976" Height="576" Background="#ffffff"
+                                   MouseLeftButtonDown="Container_MouseLeftButtonDown"
+                                  MouseMove="Container_MouseMove"
+                                   MouseLeftButtonUp="Container_MouseLeftButtonUp"  
+                                  MouseEnter="Container_MouseEnter"
+                                   MouseLeave="Container_MouseLeave"
+                                  
+                                  >
+                    </Canvas>
+
+
+                </Border>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+        <Canvas  x:Name="menuAndSetting"  Grid.Row="1" Grid.Column="1"     >
+            <setting:ActivitySetting   Canvas.Top="200" Canvas.Left="300" Canvas.ZIndex="1000"  x:Name="siActivitySetting"></setting:ActivitySetting>
+
+            <setting:BarCodeSetting   Canvas.Top="200" Canvas.Left="300" Canvas.ZIndex="1000"  x:Name="siBarCodeSetting"></setting:BarCodeSetting>
+
+        </Canvas>
+
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Background="#A0a0a0" Margin="0 10 0 0">
+            <!--<HyperlinkButton HorizontalContentAlignment="Center"  VerticalAlignment="Top"     Foreground="White"      NavigateUri="http://www.dhu.edu.cn/" TargetName="_blank"  ClickMode="Release" Content="CopyRight @ 东华大学教育技术学"     ></HyperlinkButton>-->
+
+        </Grid>
+
+
+
+        <Canvas  x:Name="canContainerCover"  Canvas.ZIndex="9000" Visibility="Collapsed" Background="Black"  Width="10000" Height="10000" Opacity="0.8" >
+            <Canvas.Resources>
+                <Storyboard x:Key="sbContainerCoverDisplay"  x:Name="sbContainerCoverDisplay">
+                    <DoubleAnimation   From="0" To="0.8" Duration="00:00:0.3" 
+                    Storyboard.TargetName="canContainerCover" 
+                    Storyboard.TargetProperty="Opacity" >
+                    </DoubleAnimation>
+                </Storyboard>
+                <Storyboard x:Key="sbContainerCoverClose"  x:Name="sbContainerCoverClose">
+                    <DoubleAnimation   From="0.8" To="0.0" Duration="00:00:0.3" 
+                    Storyboard.TargetName="canContainerCover" 
+                    Storyboard.TargetProperty="Opacity" >
+                    </DoubleAnimation>
+                </Storyboard>
+            </Canvas.Resources>
+        </Canvas>
+
+
+        <Canvas x:Name="MessageBody"   Canvas.ZIndex="10000">
+
+            <Border   Canvas.Top="200" Canvas.Left="300" CornerRadius="30" Opacity="1"  Background="#FF5C7590" Width="400"    Height="200">
+                <StackPanel VerticalAlignment="Center" Margin="20"  >
+                    <TextBlock x:Name="MessageTitle" Text="Message" Foreground="White" FontSize="18" TextWrapping="Wrap"  HorizontalAlignment="Center" Margin="10"></TextBlock>
+                    <Button x:Name="btnCloseMessage" Content="Close"  Width="100"  Height="50" FontSize="18" Click="btnCloseMessageButton_Click" ></Button>
+                </StackPanel>
+            </Border>
+        </Canvas>
+        <Canvas  x:Name="XmlContainer"  Canvas.ZIndex="10000"  >
+            <Border  Canvas.Top="200" Canvas.Left="300" Background="Gold" CornerRadius="10"  BorderBrush="SlateGray"  BorderThickness="2">
+
+                <StackPanel VerticalAlignment="Center" Margin="20"  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  Width="290" ></ColumnDefinition>
+                            <ColumnDefinition  Width="20"></ColumnDefinition>
+                            <ColumnDefinition  Width="290"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBox AcceptsReturn="True" Grid.Column="0" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"  x:Name="txtXml" Canvas.Left="50" Canvas.Top="10" Width="290" Height="200" HorizontalAlignment="Center"></TextBox>
+                        <TextBox AcceptsReturn="True" Grid.Column="2" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"  x:Name="txtEZPL" Canvas.Left="50" Canvas.Top="10" Width="290" Height="200" HorizontalAlignment="Center"></TextBox>
+                    </Grid>
+                    <StackPanel VerticalAlignment="Center" Margin="0 10 0 0" Orientation="Horizontal"  >
+                        <Button x:Name="btnCloseXml" Content="Cancel" Margin="0 10 0 0"  Width="60" Height="30" Click="CloseXml_Click"></Button>
+                        <Button x:Name="btnImportXml" Content="Import" Margin="10 10 0 0"   Width="60" Height="30" Click="ImportXml_Click"></Button>
+                        <Button x:Name="btnExportTxt" Content="Save as..." Margin="10 10 0 0"   Width="60" Height="30" Click="ExportTxt_Click"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Canvas>
+
+    </Grid>
+</UserControl>

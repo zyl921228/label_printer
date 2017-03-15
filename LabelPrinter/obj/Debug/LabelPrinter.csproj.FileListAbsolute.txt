@@ -1,0 +1,62 @@
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\bin\Debug\LabelPrinter.exe.config
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\MainWindow.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\MainWindow.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\App.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter_MarkupCompile.cache
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\bin\Debug\LabelPrinter.exe
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\bin\Debug\LabelPrinter.pdb
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.g.resources
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.Properties.Resources.resources
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.csproj.GenerateResource.Cache
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.exe
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.pdb
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\Container.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\Container.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\Activity.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\BarCode.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\Activity.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\BarCode.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.csprojResolveAssemblyReference.cache
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\ActivityPicture\InteractoinAcitivity.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Control\ActivitySetting.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\ActivityPicture\InteractoinAcitivity.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Control\ActivitySetting.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\ErrorTip.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\ActivityPictureContainer.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\ErrorTip.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter_MarkupCompile.lref
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Designer\ActivityPictureContainer.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Control\BarCodeSetting.baml
+c:\users\zcarl\documents\visual studio 2012\Projects\LabelPrinter\LabelPrinter\obj\Debug\Control\BarCodeSetting.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\bin\Debug\LabelPrinter.exe.config
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.exe
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.pdb
+E:\教育技术学\LabelPrinter\LabelPrinter\bin\Debug\LabelPrinter.exe
+E:\教育技术学\LabelPrinter\LabelPrinter\bin\Debug\LabelPrinter.pdb
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.csprojResolveAssemblyReference.cache
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\ActivityPicture\InteractoinAcitivity.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Control\ActivitySetting.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Control\BarCodeSetting.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\ErrorTip.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\MainWindow.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\ActivityPicture\InteractoinAcitivity.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Control\ActivitySetting.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Control\BarCodeSetting.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\Activity.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\ActivityPictureContainer.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\BarCode.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\Container.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\ErrorTip.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\MainWindow.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\App.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter_MarkupCompile.cache
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter_MarkupCompile.lref
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\Activity.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\ActivityPictureContainer.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\BarCode.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\Designer\Container.baml
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.g.resources
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.Properties.Resources.resources
+E:\教育技术学\LabelPrinter\LabelPrinter\obj\Debug\LabelPrinter.csproj.GenerateResource.Cache
